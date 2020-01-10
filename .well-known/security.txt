@@ -1,0 +1,2 @@
+Contact: mailto:security@mgalabs.com
+Preferred-Languages: en,it
