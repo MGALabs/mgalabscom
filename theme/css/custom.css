@@ -1,0 +1,36 @@
+@import url("fonts.css");
+
+:root {
+	--black: #18191E;
+	--white: #fff;
+	--orange: #EC6608;
+	--grey: #AAAAAA;
+}
+
+/***** Global *****/
+
+/* Body */
+
+body {
+	background: var(--black);
+	color: var(--white);
+	font-size: 87.5%;
+	/* Base font size: 14px */
+	font-family: 'Metropolis', Arial, sans-serif;
+	line-height: 1.429;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.navbar-brand {
+    width: 300px;
+}
+
+.navbar-nav .nav-item + .nav-item {
+    margin: 0;
+}
+
+.main-wrapper {
+    margin-top: 90px;
+}
