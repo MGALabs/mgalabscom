@@ -24,6 +24,7 @@
         <link href="/theme/css/themes/darkly/bootstrap.min.css" rel="stylesheet">
 
     <link href="/theme/css/entypo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
@@ -36,7 +37,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-light bg-faded fixed-top" role="navigation">
+<nav class="navbar navbar-expand-md navbar-inverse bg-inverse fixed-top" role="navigation">
     <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target=".navbar-main-collapse" aria-label="Toggle navigation">
         <i class="icon-menu"></i>
     </button>
@@ -66,19 +67,45 @@
     <div class="container-fluid">
         <div class="row">
                 <div class="col-xl-12">
-        <div class="article-list">
-                <article>
-                    <time datetime="2021-12-03T10:20:00+01:00"> ven 03 dicembre 2021</time>
-                    <h2><a href="/2021/demo-article.html">Demo Article</a></h2>
-                    <div class="summary"><p>This is a demo article</p>
-                        <div class="clearfix">
-                            <a class="btn btn-secondary btn-md float-right" href="/2021/demo-article.html">more…</a>
+    <div class="container">
+        <h2 class="mb-4">Blog</h2>
+            <div class="article-list mb-5">
+                    <article class="mb-5">
+                        <div class="row">
+                            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+<img class="img-fluid" src="/images/fingerprint.png" alt="article.title">                            </div>
+                            <div class="col-md-8 d-flex flex-column justify-content-center">
+                                <time datetime="2022-01-22T10:20:00+01:00"> sab 22 gennaio 2022</time>
+                                <h2><a href="/2022/demo-2.html">Demo 2</a></h2>
+                                <div class="summary"><h3>I pesci hanno le ali?</h3>
+<p>Diffuso sia in <strong>Europa</strong> sia in Nord America, si differenzia in due tipi, britannico e americano. A volte quest’ultimo viene ulteriormente suddiviso fra statunitense e canadese. La razza è classificata come unica ed è stata inserita in un registro ufficiale la prima volta nel …</p>
+                                    <div class="">
+                                        <a class="btn btn-outline btn-md" href="/2022/demo-2.html">Leggi</a>
+                                    </div>
+                                </div>                        
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <hr/>
-        </div>
+                    </article>                    
+                    <article class="mb-5">
+                        <div class="row">
+                            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+<img class="img-fluid" src="/images/forensics.png" alt="article.title">                            </div>
+                            <div class="col-md-8 d-flex flex-column justify-content-center">
+                                <time datetime="2021-12-03T10:20:00+01:00"> ven 03 dicembre 2021</time>
+                                <h2><a href="/2021/demo-article.html">Demo Article</a></h2>
+                                <div class="summary"><h3>Il Golden retriever è un cane da riporto di taglia media, a pelo lungo e idrorepellente, di origine scozzese.</h3>
+<p>Diffuso sia in <strong>Europa</strong> sia in Nord America, si differenzia in due tipi, britannico e americano. A volte quest’ultimo viene ulteriormente suddiviso fra statunitense e canadese. La razza è classificata …</p>
+                                    <div class="">
+                                        <a class="btn btn-outline btn-md" href="/2021/demo-article.html">Leggi</a>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                    </article>                    
+            </div>
+    </div>
 
+    
                 </div>
         </div>
     </div>
@@ -117,13 +144,25 @@
     </div>
   </div>
 </section>
-<footer>
-   <div class="container-fluid">
-      <hr>
+<footer class="main-footer bg-black-flat">
+   <div class="container-fluid">      
       <div class="row">
-         <div class="col-sm-10">&copy; 2021 MGAadmin
-            &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>         </div>
-         <div class="col-sm-2"><p class="float-right"><i class="icon-up-big"></i> <a href="#">Back to top</a></p></div>
+          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+            <img class="img-fluid mb-2" src="/images/logo_grey.png" alt="MGAlabs">
+            <p>&copy; 2022 MGALabs - All rights reserved</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+            <p><span class="white">MGALabs S.r.l.</span><br>
+              Largo Guido Novello 1/C, 50126 Firenze (FI)<br>
+              P.I. 01980770760</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+            <p><a href="mailto:info@mgalabs.com" target="_blank">info@mgalabs.com</a> - +39 055 289085<br>
+              <a href="https://www.facebook.com/MGALabs" target="_blank" rel="nofollow" class="mr-2"><i class="icon-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/mgalabs/" target="_blank" rel="nofollow"><i class="icon-linkedin"></i></a>
+            </p>
+          </div>
+         <!-- <div class="col-sm-2"><p class="float-right"><i class="icon-up-big"></i> <a href="#">Back to top</a></p></div> -->
       </div>
    </div>
 </footer>
@@ -131,7 +170,7 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/theme/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/theme/retina.min.js"></script> 
+<script type="text/javascript" src="/theme/js/retina.min.js"></script> 
 
 
 

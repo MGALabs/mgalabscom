@@ -17,6 +17,10 @@
 	background: var(--blacker);
 }
 
+.white {
+	color: var(--white);
+}
+
 /***** Global *****/
 
 /* Body */
@@ -58,6 +62,10 @@ a, a:not([href]):not([tabindex]){
 	color: var(--orange);
 }
 
+a:focus, a:hover {
+	color: var(--white);
+}
+
 .entry-content .btn-outline, .btn-outline {
 	border: 1px solid var(--white);
 	color: var(--white);
@@ -90,12 +98,16 @@ a, a:not([href]):not([tabindex]){
 	padding: 0.75rem 2rem;
 }
 
+.navbar {
+	padding: 1rem 4rem;
+}
+
 .navbar-brand {
     width: 300px;
 }
 
-.bg-faded {
-	background: var(--black);
+.bg-inverse {
+	background: var(--black) !important;
 }
 
 .navbar-nav .nav-item + .nav-item {
@@ -116,6 +128,13 @@ section {
 
 #hero-home img {
 	max-width: 483px;
+	/* animation: spin 10s linear infinite; */
+}
+
+@media (max-width: 992px) {
+	#hero-home img {
+		margin: 1rem auto;
+	}
 }
 
 #hero-home h4{	
@@ -142,4 +161,48 @@ section {
 #soc-home p, #super-footer p, .box p, #gruppo-e-footer p{
 	font-size: 16px;
 	color: var(--grey);
+}
+
+.main-footer {
+	padding: 4rem;
+}
+
+footer p {
+	color: var(--grey);
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.post-info .published {
+	font-size: .9rem;
+}
+
+.article-list article time {
+	font-size: .9rem;
+}
+
+.article-list article .summary p, 
+.article-list article .summary h2, 
+.article-list article .summary h3,
+.article-list article .summary h4,
+.article-list article .summary h5,
+.article-list article .summary h6  
+{
+	color: var(--grey);
+	font-size: 16px;
+}
+
+article img {
+	max-width: 100%;
+}
+
+/* animations */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

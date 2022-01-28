@@ -12,13 +12,13 @@
 <link rel="canonical" href="/2021/demo-article.html">
 
         <meta name="author" content="MGAadmin" />
-        <meta name="description" content="This is a demo article" />
+        <meta name="description" content="Il Golden retriever è un cane da riporto di taglia media, a pelo lungo e idrorepellente, di origine scozzese. Diffuso sia in Europa sia in Nord America, si differenzia in due tipi, britannico e americano. A volte quest’ultimo viene ulteriormente suddiviso fra statunitense e canadese. La razza è classificata …" />
 
         <meta property="og:site_name" content="MGALabs" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="Demo Article"/>
         <meta property="og:url" content="/2021/demo-article.html"/>
-        <meta property="og:description" content="This is a demo article"/>
+        <meta property="og:description" content="Il Golden retriever è un cane da riporto di taglia media, a pelo lungo e idrorepellente, di origine scozzese. Diffuso sia in Europa sia in Nord America, si differenzia in due tipi, britannico e americano. A volte quest’ultimo viene ulteriormente suddiviso fra statunitense e canadese. La razza è classificata …"/>
         <meta property="article:published_time" content="2021-12-03" />
             <meta property="article:section" content="Blog" />
             <meta property="article:author" content="MGAadmin" />
@@ -28,6 +28,7 @@
         <link href="/theme/css/themes/darkly/bootstrap.min.css" rel="stylesheet">
 
     <link href="/theme/css/entypo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link href="/theme/css/pygments/native.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
@@ -40,7 +41,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-light bg-faded fixed-top" role="navigation">
+<nav class="navbar navbar-expand-md navbar-inverse bg-inverse fixed-top" role="navigation">
     <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target=".navbar-main-collapse" aria-label="Toggle navigation">
         <i class="icon-menu"></i>
     </button>
@@ -70,7 +71,7 @@
     <div class="container-fluid">
         <div class="row">
                 <div class="col-xl-12">
-    <section id="content">
+    <section id="content" class="container mb-5">
         <article>
             <header>
                 <h1>
@@ -82,21 +83,22 @@
                 </h1>
             </header>
             <div class="entry-content">
-                <div class="card">
-                    <div class="card-block">
-<footer class="post-info">
-    <span class="published">
-        <i class="icon-calendar"></i><time datetime="2021-12-03T10:20:00+01:00"> ven 03 dicembre 2021</time>
+<div class="post-info mb-5">
+    <span class="published d-flex align-items-center">
+        <i class="icon-calendar mr-2"></i><time datetime="2021-12-03T10:20:00+01:00"> ven 03 dicembre 2021</time>
     </span>
+    <a class="small" href="/category/blog.html">Back to Blog</a></div>
 
 
 
 
 
     
-</footer><!-- /.post-info -->                    </div>
-                </div>
-                <p>This is a demo article</p>
+    </div><!-- /.post-info -->                
+                <h3>Il Golden retriever è un cane da riporto di taglia media, a pelo lungo e idrorepellente, di origine scozzese.</h3>
+<p>Diffuso sia in <strong>Europa</strong> sia in Nord America, si differenzia in due tipi, britannico e americano. A volte quest’ultimo viene ulteriormente suddiviso fra statunitense e canadese. La razza è classificata come unica ed è stata inserita in un registro ufficiale la prima volta nel 1903, in Inghilterra. </p>
+<p><img alt="Testo Alt" src="https://mdg.imgix.net/assets/images/san-juan-mountains.jpg"></p>
+<p>Il suo codice FCI è 111 (28.10.2009), l'Ente nazionale cinofilia italiana (ENCI) lo classifica, secondo lo standard della Federazione cinofila internazionale, nel gruppo 8 sezione 1: cane da riporto (con prova di lavoro), quindi un cane da utilità (cane da caccia), che per natura e caratteristiche si trova a suo agio sia fuori sia dentro l'acqua.</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -140,13 +142,25 @@
     </div>
   </div>
 </section>
-<footer>
-   <div class="container-fluid">
-      <hr>
+<footer class="main-footer bg-black-flat">
+   <div class="container-fluid">      
       <div class="row">
-         <div class="col-sm-10">&copy; 2021 MGAadmin
-            &middot; Powered by <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>         </div>
-         <div class="col-sm-2"><p class="float-right"><i class="icon-up-big"></i> <a href="#">Back to top</a></p></div>
+          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+            <img class="img-fluid mb-2" src="/images/logo_grey.png" alt="MGAlabs">
+            <p>&copy; 2022 MGALabs - All rights reserved</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+            <p><span class="white">MGALabs S.r.l.</span><br>
+              Largo Guido Novello 1/C, 50126 Firenze (FI)<br>
+              P.I. 01980770760</p>
+          </div>
+          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+            <p><a href="mailto:info@mgalabs.com" target="_blank">info@mgalabs.com</a> - +39 055 289085<br>
+              <a href="https://www.facebook.com/MGALabs" target="_blank" rel="nofollow" class="mr-2"><i class="icon-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/mgalabs/" target="_blank" rel="nofollow"><i class="icon-linkedin"></i></a>
+            </p>
+          </div>
+         <!-- <div class="col-sm-2"><p class="float-right"><i class="icon-up-big"></i> <a href="#">Back to top</a></p></div> -->
       </div>
    </div>
 </footer>
@@ -154,7 +168,7 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/theme/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/theme/retina.min.js"></script> 
+<script type="text/javascript" src="/theme/js/retina.min.js"></script> 
 
 
 
