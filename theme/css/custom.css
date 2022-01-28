@@ -2,9 +2,19 @@
 
 :root {
 	--black: #18191E;
+	--blacker: #0A0B0D;
 	--white: #fff;
 	--orange: #EC6608;
 	--grey: #AAAAAA;
+}
+
+.bg-black {
+	background: var(--black);
+	background: #18191EEE
+}
+
+.bg-black-flat {
+	background: var(--blacker);
 }
 
 /***** Global *****/
@@ -13,8 +23,11 @@
 
 body {
 	background: var(--black);
+	background-image: url('../img/background.jpg');
+	background-position: cover;
+	background-attachment: fixed;
 	color: var(--white);
-	font-size: 87.5%;
+	font-size: 20px;
 	/* Base font size: 14px */
 	font-family: 'Metropolis', Arial, sans-serif;
 	line-height: 1.429;
@@ -23,8 +36,66 @@ body {
 	text-align: left;
 }
 
+/* typography */
+
+h1 {
+	font-size: 4rem;
+	font-weight: 600;
+
+}
+h2 {
+	font-weight: 600;
+	line-height: 3rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+	font-weight: 200;
+	line-height: 2rem;
+}
+
+a, a:not([href]):not([tabindex]){
+	color: var(--orange);
+}
+
+.entry-content .btn-outline, .btn-outline {
+	border: 1px solid var(--white);
+	color: var(--white);
+	border-radius: 1rem;
+	line-height: 1;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+}
+
+.btn-outline:hover, 
+.btn-outline:focus,
+.btn-outline:target
+.entry-content .btn-outline:hover, 
+.entry-content .btn-outline:focus, 
+.entry-content .btn-outline:target { 
+	background: var(--white);
+	color: var(--black);
+}
+
+.btn-orange, .entry-content .btn-orange {
+	border-color: var(--orange);
+}
+
+.btn-orange:hover, .entry-content .btn-orange:hover {
+	background: var(--orange);
+	color: var(--white);
+}
+
+.btn-lg {
+	padding: 0.75rem 2rem;
+}
+
 .navbar-brand {
     width: 300px;
+}
+
+.bg-faded {
+	background: var(--black);
 }
 
 .navbar-nav .nav-item + .nav-item {
@@ -33,4 +104,42 @@ body {
 
 .main-wrapper {
     margin-top: 90px;
+}
+
+section {
+	padding: 3rem;
+}
+
+.mega-padding {
+	padding: 8rem;
+}
+
+#hero-home img {
+	max-width: 483px;
+}
+
+#hero-home h4{	
+	color: var(--grey);
+}
+
+#boxes-home {	
+	padding-bottom:4rem;
+}
+
+.box {
+	border-radius: 10px;
+	height: 100%;
+}
+
+.box > .row {
+	height: 100%;
+}
+
+.box img {
+	max-height: 160px !important;
+}
+
+#soc-home p, #super-footer p, .box p, #gruppo-e-footer p{
+	font-size: 16px;
+	color: var(--grey);
 }

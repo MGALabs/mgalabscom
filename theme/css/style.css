@@ -82,7 +82,7 @@ a, a:hover {
     color: inherit;
 }
 
-.entry-content a {
+/* .entry-content a {
     text-decoration: none;
     border-bottom: 1px dotted;
 }
@@ -90,7 +90,7 @@ a, a:hover {
 .entry-content a:hover {
     text-decoration: none;
     border-bottom: 1px solid;
-}
+} */
 
 .entry-content img {
     max-width: 100%;
