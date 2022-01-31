@@ -106,12 +106,24 @@ a:focus, a:hover {
     width: 300px;
 }
 
-.bg-inverse {
+.bg-dark {
 	background: var(--black) !important;
 }
 
 .navbar-nav .nav-item + .nav-item {
     margin: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: var(--grey);
+	padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+}
+
+@media (min-width:992px) {
+	.nav-link {
+		padding: 0.5rem 1.2rem;
+	}
 }
 
 .main-wrapper {
@@ -124,6 +136,10 @@ section {
 
 .mega-padding {
 	padding: 8rem;
+}
+
+.hero-page h4{
+	color: var(--grey)
 }
 
 #hero-home img {
@@ -205,4 +221,50 @@ article img {
   to {
     transform: rotate(360deg);
   }
+}
+
+.animate-slide-out {
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out
+}
+
+/* custom navbar trigger */
+
+.leftmenutrigger {
+	display: none;
+}
+
+@media (max-width: 991px) {
+	.leftmenutrigger{
+		display: block;		
+		margin: 7px 20px 4px 0;
+		cursor: pointer;
+	}
+
+	.navbar-nav.side-nav.open {
+		right:0;
+	}
+
+	.menu-heading h4{
+		text-transform: uppercase;
+		font-size: 1rem;
+		color: var(--orange);
+	}
+
+	.navbar-nav.side-nav{
+		background: var(--blacker);		
+		position:fixed;
+		top:80px;
+		flex-direction: column !important;
+		right:-220px;
+		width:200px;
+		overflow-y:auto;
+		bottom:0;
+		overflow-x:hidden;
+		padding-top:1rem;
+		padding-bottom:40px;
+	}
 }

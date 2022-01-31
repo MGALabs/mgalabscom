@@ -21,7 +21,7 @@
 
 
     <!-- Bootstrap -->
-        <link href="/theme/css/themes/darkly/bootstrap.min.css" rel="stylesheet">
+        <link href="/theme/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="/theme/css/entypo.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -37,24 +37,27 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md navbar-inverse bg-inverse fixed-top" role="navigation">
-    <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target=".navbar-main-collapse" aria-label="Toggle navigation">
-        <i class="icon-menu"></i>
-    </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation">
     <a href="/" class="navbar-brand">
 <img class="img-fluid float-left gap-right" src="/images/logo_MGALABS.png" width=""/>     </a>
-    <div class="collapse navbar-collapse navbar-main-collapse">
-        <ul class="navbar-nav">
+    <span class="navbar-toggler-icon leftmenutrigger"></span>
+    <div class="navbar-collapse">
+        <ul class="navbar-nav animate-slide-out side-nav ml-lg-auto">
             <!--  -->
-                     <li class="nav-item "><a href="/pages/home.html" class="nav-link">
-                         Home
-                      </a></li>
-                     <li class="nav-item "><a href="/pages/contact.html" class="nav-link">
-                         Contact
-                      </a></li>
+            <li class="nav-item d-block d-lg-none px-3 menu-heading">
+                <h4>Menu</h4>
+            </li>
                     <li class="nav-item ">
                         <a href="/category/blog.html" class="nav-link">Blog</a>
                     </li>
+                     <li class="nav-item "><a href="/work-with-us.html" class="nav-link">
+                         Lavora con Noi
+                      </a></li>
+                     <li class="nav-item "><a href="/contact.html" class="nav-link">
+                         Contact
+                      </a></li>
+            
+            
         </ul>
         <ul class="navbar-nav navbar-right">
         </ul>
@@ -85,7 +88,7 @@
             <div class="col-6 d-flex flex-column align-items-start justify-content-center">
               <h3>Get in Touch</h3>
               <p>MGALabs punta ad un'offerta formativa incentrata sulla Cyber Security e sulla necessità delle aziende di creare</p>
-              <a class="btn btn-outline btn-orange" href="{filename}/security-assessment.html">Contatti</a>
+              <a class="btn btn-outline btn-orange" href="/contact.html">Contatti</a>
             </div>
           </div>
         </div>
@@ -109,17 +112,17 @@
 </section>
 <footer class="main-footer bg-black-flat">
    <div class="container-fluid">      
-      <div class="row">
-          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+      <div class="row text-center">
+          <div class="col-lg-4 d-lg-flex flex-column align-items-start justify-content-center">
             <img class="img-fluid mb-2" src="/images/logo_grey.png" alt="MGAlabs">
             <p>&copy; 2022 MGALabs - All rights reserved</p>
           </div>
-          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+          <div class="col-lg-4 d-lg-flex flex-column align-items-start justify-content-center">
             <p><span class="white">MGALabs S.r.l.</span><br>
               Largo Guido Novello 1/C, 50126 Firenze (FI)<br>
               P.I. 01980770760</p>
           </div>
-          <div class="col-lg-4 d-flex flex-column align-items-start justify-content-center">
+          <div class="col-lg-4 d-lg-flex flex-column align-items-start justify-content-center">
             <p><a href="mailto:info@mgalabs.com" target="_blank">info@mgalabs.com</a> - +39 055 289085<br>
               <a href="https://www.facebook.com/MGALabs" target="_blank" rel="nofollow" class="mr-2"><i class="icon-facebook"></i></a>
               <a href="https://www.linkedin.com/company/mgalabs/" target="_blank" rel="nofollow"><i class="icon-linkedin"></i></a>
@@ -133,7 +136,23 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/theme/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/theme/js/retina.min.js"></script> 
+<script type="text/javascript" src="/theme/js/retina.min.js"></script>
+<script type="text/javascript" src="/theme/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.leftmenutrigger').on('click', function(e) {
+        $('.side-nav').toggleClass("open");
+        e.preventDefault();
+        });
+    });
+
+    var waypoints = $('section').waypoint({
+        handler: function(direction) {
+            $(this.element).addClass('animate__animated');
+        },
+        offset: '25%'
+    })  
+</script>
 
 
 
