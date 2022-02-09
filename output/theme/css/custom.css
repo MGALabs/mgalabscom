@@ -142,7 +142,7 @@ section {
 	color: var(--grey)
 }
 
-.entry-content img {	
+.entry-content img, .entry-content svg.img-fluid {	
 	max-width: 400px;
 }
 
@@ -217,15 +217,45 @@ article img {
 	max-width: 100%;
 }
 
+.opacity-75 {
+	opacity: .75;
+}
+
+.opacity-50 {
+	opacity: .5;
+}
+
+.opacity-25 {
+	opacity: .25;
+}
+
 /* animations */
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from { transform: rotateZ(0deg); }
+	to { transform: rotateZ(360deg); }
+}
+
+@keyframes spin-opposite {
+	from { transform: rotateZ(0deg); }
+	to { transform: rotateZ(-360deg); }
+}
+
+@keyframes flash-orange {
+	from { fill: #fff; }
+	to { fill: #ffa778; }
+}
+
+@keyframes turn-black {
+	0%   {fill: #18191e;}
+  	25%  {fill: #fff;}
+	75%  {fill: #fff;}
+	100%   {fill: #18191e;}
+}
+
+@keyframes myFadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 .animate-slide-out {
@@ -234,6 +264,28 @@ article img {
 	-o-transition: all .5s ease-in-out;
 	-ms-transition: all .5s ease-in-out;
 	transition: all .5s ease-in-out
+}
+
+.spin {
+	transform-origin: center;
+	animation: spin 50s linear infinite;
+}
+
+.spin-opposite {
+	transform-origin: center;
+	animation: spin-opposite 50s linear infinite;
+}
+
+.flash-orange {
+	animation: flash-orange 1s linear 3s both, flash .5s linear 4s;
+}
+
+.turn-black {
+	animation: turn-black 1.5s linear 1s both;
+}
+
+.myfadein {
+	animation: myFadeIn 1.5s ease-out 3s both;
 }
 
 /* custom navbar trigger */

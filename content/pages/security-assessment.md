@@ -16,7 +16,7 @@ hide_menu: True
 
 {{ hero("Security Assessment",
     "MGALabs offre servizi professionali destinati ad accompagnare nel proprio percorso tecnologico qualsiasi azienda già avviata o soluzioni mirate a sviluppare in termini di progettazione ed implementazione di infrastrutture IT qualsiasi attività di business nascente.",
-    "{static}/images/security-assessment.png",
+    "/images/security-assessment.svg",
     "Security Assessment") }}
 
 <!-- row(
@@ -31,7 +31,7 @@ hide_menu: True
     <p>La metodologia per il Vulnerability Assessment infrastrutturale permette di individuare tutte le vulnerabilità, potenziali o presenti, all'interno dei sistemi della rete aziendale. L'indagine di Vulnerability Assessment effettuata da MGALabs si basa su una metodicità e una scrupolosità sviluppate anche grazie all'esperienza maturata operando su numerosi progetti distribuiti.</p>
     <p>
     ",
-    "{static}/images/home.png",
+    "/images/home.png",
     "Alt Text")
 }}
 

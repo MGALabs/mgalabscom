@@ -1,3 +1,5 @@
+{% from 'row.html' import svg %}
+
 <html>
     <head>
         <title>Home</title>
@@ -20,7 +22,8 @@
                         <h4>MGALabs, grazie alla conoscenza e alla specializzazione sulle tecnologie più avanzate in materia di Cyber Security, offre assistenza tecnica e supporto logistico ai propri Clienti per controllare e proteggere da rischi e problemi derivanti da attacchi e minacce informatiche.</h4>
                     </div>
                     <div class="col-lg-4 d-flex flex-column justify-content-center animate__animated animate__fadeInDown">
-                        <img class="img-fluid my-2" src="{static}/images/home.png" alt="MGALabs">
+                        <!-- <img class="img-fluid my-2" src="{static}/images/home.png" alt="MGALabs"> -->
+                        {{ svg("/images/home.svg") }}
                     </div>
                 </div>
             </div>
@@ -122,7 +125,8 @@
         <section id="soc-home" class="bg-black animate__fadeInDown">
             <div class="row">
                 <div class="col-lg-6 mx-auto text-center">
-                    <img class="img-fluid mb-5" src="{static}/images/SOC.png" alt="Security Operation Center">
+                    <!-- <img class="img-fluid mb-5" src="{static}/images/SOC.png" alt="Security Operation Center"> -->
+                    {{ svg("/images/soc.svg") }}
                     <h2 class="mb-3">Scegli la nostra soluzione di controllo completo Security Operation Center</h2>
                     <p>MGALabs, grazie alla conoscenza e alla specializzazione sulle tecnologie più avanzate 
                         in materia di Cyber Security, offre assistenza tecnica e supporto logistico ai propri Clienti 

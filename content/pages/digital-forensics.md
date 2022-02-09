@@ -9,7 +9,7 @@ hide_menu: True
 
 {{ hero("Digital Forensics",
     "MGALabs offre servizi professionali destinati ad accompagnare nel proprio percorso tecnologico qualsiasi azienda già avviata o soluzioni mirate a sviluppare in termini di progettazione ed implementazione di infrastrutture IT qualsiasi attività di business nascente.",
-    "{static}/images/forensics.png",
+    "/images/forensics.svg",
     "Digital Forensics") }}
 
 {{ row("Row Title",
