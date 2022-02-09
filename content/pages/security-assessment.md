@@ -26,10 +26,9 @@ hide_menu: True
     Row Image alt Text
 -->
 
-{{ row("Row Title",
+{{ row("Vulnerability Assessment",
     "
-    <p>La metodologia per il Vulnerability Assessment infrastrutturale permette di individuare tutte le vulnerabilità, potenziali o presenti, all'interno dei sistemi della rete aziendale. L'indagine di Vulnerability Assessment effettuata da MGALabs si basa su una metodicità e una scrupolosità sviluppate anche grazie all'esperienza maturata operando su numerosi progetti distribuiti.</p>
-    <p>
+    <p>La metodologia per il Vulnerability Assessment infrastrutturale permette di individuare tutte le vulnerabilità, potenziali o presenti, all'interno dei sistemi della rete aziendale. L'indagine di Vulnerability Assessment effettuata da MGALabs si basa su una metodicità e una scrupolosità sviluppate anche grazie all'esperienza maturata operando su numerosi progetti distribuiti.</p>    
     ",
     "/images/home.png",
     "Alt Text")
@@ -42,7 +41,7 @@ hide_menu: True
     "")
 }}
 
-{{ row("Row Title",
+{{ row("Penetration Testing",
     "
     <p>Un'attività di Penetration Testing è un processo operativo per la valutazione 
 della reale sicurezza cibernetica di un sistema informativo, inteso come 
@@ -61,6 +60,6 @@ impersonato da un ethical hacker, e consiste nell'individuazione e sfruttamento
 delle vulnerabilità, tramite tecniche di exploiting e persistenza nei sistemi, al fine 
 di ottenere l'accesso a uno o più sistemi e alle informazioni da esso contenute.</p>    
     ",
-    "{static}/images/forensics.png",
+    "/images/penetration-testing.png",
     "Alt Text")
 }}

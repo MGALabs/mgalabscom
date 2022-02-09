@@ -17,6 +17,6 @@ hide_menu: True
     <p>La metodologia per il Vulnerability Assessment infrastrutturale permette di individuare tutte le vulnerabilità, potenziali o presenti, all'interno dei sistemi della rete aziendale. L'indagine di Vulnerability Assessment effettuata da MGALabs si basa su una metodicità e una scrupolosità sviluppate anche grazie all'esperienza maturata operando su numerosi progetti distribuiti.</p>
     <p>
     ",
-    "{static}/images/forensics.png",
+    "/images/forensics.png",
     "Alt Text")
 }}
