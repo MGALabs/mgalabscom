@@ -1,10 +1,10 @@
-Title: Contact
+Title: Contatti
 Date: 2022-01-18 10:22
 save_as: contact.html
 url: contact.html
 menu_order: 2
 
-# Contacts
+# Contatti
 
 
 ## MGALabs S.r.l.
