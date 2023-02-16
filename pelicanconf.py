@@ -5,6 +5,16 @@ SITELOGO = 'images/logo_MGALABS.png'
 # SITEURL = 'https://www.mgalabs.com/' # prod url is specified in publishconf.py
 SITEURL = '' # de-comment to work in local
 
+STATIC_PATHS = [
+    'images',
+    'extra', 
+]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/CNAME': {'path': 'CNAME'},
+}
+
 FAVICON = 'images/favicon.png'
 
 PATH = 'content'
