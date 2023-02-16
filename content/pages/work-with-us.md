@@ -8,23 +8,19 @@ menu_order: 1
 {% from 'row.html' import hero %}
 
 {{ hero("Lavora con Noi",
-    "MGALabs offre servizi professionali destinati ad accompagnare nel proprio percorso tecnologico qualsiasi azienda già avviata o soluzioni mirate a sviluppare in termini di progettazione ed implementazione di infrastrutture IT qualsiasi attività di business nascente.",
+    "MGALabs offre attività di alta qualità, allo stato dell'arte della cybersecurity, senza nessun compromesso.
+    Per fare questo ricerchiamo professionisti della sicurezza informatica, ma non solo, ricerchiamo hacker appassionati e studiosi. Crediamo fermamente nello sviluppo della conoscienza, l'ambiente è sviluppato per favorire lo scambio di esperienze e lo sviluppo professionale, anche con specifici piani di training e certificazione.",
     "/images/work-with-us.png",
     "Lavora con Noi") }}
 
 ## Posizioni Aperte
 
-{{ row("Junior Developer",
-    "La metodologia per il Vulnerability Assessment infrastrutturale permette di individuare tutte le vulnerabilità, potenziali o presenti, all'interno dei sistemi della rete aziendale. L'indagine di Vulnerability Assessment effettuata da MGALabs si basa su una metodicità e una scrupolosità sviluppate anche grazie all'esperienza maturata operando su numerosi progetti distribuiti.</p>
-    <a class='btn btn-outline btn-orange my-3' href='mailto:info@mgalabs.com?subject=Junior Developer' target='_blank'>Invia Candidatura</a>
-    ",
-    "",
-    "")
-}}
-
-{{ row("Senior Developer",
-    "La metodologia per il Vulnerability Assessment infrastrutturale permette di individuare tutte le vulnerabilità, potenziali o presenti, all'interno dei sistemi della rete aziendale. L'indagine di Vulnerability Assessment effettuata da MGALabs si basa su una metodicità e una scrupolosità sviluppate anche grazie all'esperienza maturata operando su numerosi progetti distribuiti.</p>
-    <a class='btn btn-outline btn-orange my-3' href='mailto:info@mgalabs.com?subject=Senior Developer' target='_blank'>Invia Candidatura</a>
+{{ row("Red Team Member",
+    "Ricerchiamo uno specialista in offensive security da inserire all'interno del nostro Red Team, possibilmente
+    con esperienza in penetration testing su web application , mobile application o infrastruttura. 
+    RAL commisurata alla seniority. 
+    </p>
+    <a class='btn btn-outline btn-orange my-3' href='mailto:info@mgalabs.com?subject=Red Team' target='_blank'>Invia Candidatura</a>
     ",
     "",
     "")
