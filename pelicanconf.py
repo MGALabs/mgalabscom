@@ -13,7 +13,6 @@ EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'},
-    'extra/academy/': {'path': 'academy/'},
     'extra/.well-known/security.txt': {'path': '.well-known/security.txt'},
 }
 
