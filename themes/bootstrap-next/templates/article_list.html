@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <h2 class="mb-4">Blog</h2>
+        {% if articles %}
+            <div class="article-list mb-5">
+                {% for article in (articles_page.object_list if articles_page else articles) %}
+                    <article class="mb-5">
+                        <div class="row">
+                            <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                {% if article.cover %}<img class="img-fluid" src="{{ article.cover }}" alt="article.title">{% endif %}
+                            </div>
+                            <div class="col-md-8 d-flex flex-column justify-content-center">
+                                <time datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }}</time>
+                                <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+                                {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
+                                    <div class="card">
+                                        <div class="card-block">
+                                            {% include "includes/article_info.html" %}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                <div class="summary">{{ article.summary }}
+                                    {% include 'includes/comment_count.html' %}
+                                    <div class="">
+                                        <a class="btn btn-outline btn-md" href="{{ SITEURL }}/{{ article.url }}">Leggi</a>
+                                    </div>
+                                </div>                        
+                            </div>
+                        </div>
+                    </article>                    
+                {% endfor %}
+            </div>
+            {% else %}
+            <p>Ancora non è stato pubblicato nessun articolo.</p> 
+        {% endif %}
+        {% include 'includes/pagination.html' %}
+    </div>
+
+    
+{% endblock content %}

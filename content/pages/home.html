@@ -1,0 +1,146 @@
+{% from 'row.html' import svg %}
+
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="keywords" content="home, cybersecurity" />
+        <meta name="date" content="2021-01-28 17:00" />
+        <meta name="modified" content="2021-01-28 17:00" />
+        <meta name="save_as" content="index.html" />
+        <meta name="url" content="" />
+        <meta name="menu_order" content="1" />
+        <meta name="authors" content="MGALabs" />
+        <meta name="summary" content="Short version for index and feeds" />
+        <!-- <meta name="template" content="article_list" /> -->
+    </head>
+    <body>
+        <section id="hero-home">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 d-flex flex-column justify-content-center align-items-start text-center text-md-left animate__animated animate__fadeInDown">
+                        <h1 class="mb-3">Servizi professionali per la tua cyber-security</h1>
+                        <h4>MGALabs, grazie alla conoscenza e alla specializzazione sulle tecnologie più avanzate in materia di Cyber Security, offre assistenza tecnica e supporto logistico ai propri Clienti per controllare e proteggere da rischi e problemi derivanti da attacchi e minacce informatiche.</h4>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column justify-content-center animate__animated animate__fadeInDown">
+                        <!-- <img class="img-fluid my-2" src="{static}/images/home.png" alt="MGALabs"> -->
+                        {{ svg("/images/home.svg") }}
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="boxes-home" class="animate__animated animate__fadeInUp">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="box p-3">
+                            <div class="row p-5 bg-black">
+                                <div class="col-xl-4 d-flex flex-column align-items-center justify-content-center">
+                                    <img class="img-fluid my-4" src="{static}/images/securityassessment.png" alt="Security Assessment">
+                                </div>
+                                <div class="col-xl-8 d-flex flex-column justify-content-center align-items-start">
+                                    <h3>Security Assessment</h3>
+                                    <p>MGALabs offre servizi professionali destinati ad 
+                                        accompagnare nel proprio percorso tecnologico 
+                                        qualsiasi azienda già avviata o soluzioni mirate 
+                                        a sviluppare in termini di progettazione 
+                                        ed implementazione di infrastrutture IT
+                                        qualsiasi attività di business nascente.</p>
+                                    <a class="btn btn-outline" href="/security-assessment.html">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex flex-column justify-content-center">
+                        <div class="box p-3">
+                            <div class="row p-5 bg-black">
+                                <div class="col-xl-4 d-flex flex-column align-items-center justify-content-center">
+                                    <img class="img-fluid my-4" src="{static}/images/controlroom.png" alt="Security Operation Center">
+                                </div>
+                                <div class="col-xl-8 d-flex flex-column justify-content-center align-items-start">
+                                    <h3>Security Operation Center</h3>
+                                    <p>MGALabs offre servizi professionali destinati ad 
+                                        accompagnare nel proprio percorso tecnologico 
+                                        qualsiasi azienda già avviata o soluzioni mirate 
+                                        a sviluppare in termini di progettazione 
+                                        ed implementazione di infrastrutture IT
+                                        qualsiasi attività di business nascente.
+                                        MGALabs offre servizi professionali destinati ad 
+                                        accompagnare nel proprio percorso tecnologico 
+                                        qualsiasi azienda già avviata o soluzioni mirate 
+                                        a sviluppare in termini di progettazione 
+                                        ed implementazione di infrastrutture IT
+                                        qualsiasi attività di business nascente.</p>
+                                    <a class="btn btn-outline" href="/security-operation-center.html">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="box p-3">
+                            <div class="row p-5 bg-black">
+                                <div class="col-xl-4 d-flex flex-column align-items-center justify-content-center">
+                                    <img class="img-fluid my-4" src="{static}/images/fingerprint.png" alt="Digital Forensics">
+                                </div>
+                                <div class="col-xl-8 d-flex flex-column justify-content-center align-items-start">
+                                    <h3>Digital Forensics</h3>
+                                    <p>La Digital Forensics permette di identificare alterazioni e danneggiamenti di sistemi 
+                                        e apparecchiature, di validare violazioni 
+                                        e manipolazioni di dati informatici, di individuare 
+                                        le modalità sfruttate per effettuare l'attacco 
+                                        e, in ultimo, di risalire e recuperare dati persi o eliminati.</p>
+                                    <a class="btn btn-outline" href="/digital-forensics.html">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="box p-3">
+                            <div class="row p-5 bg-black">
+                                <div class="col-xl-4 d-flex flex-column align-items-center justify-content-center">
+                                    <img class="img-fluid my-4" src="{static}/images/training.png" alt="Training">
+                                </div>
+                                <div class="col-xl-8 d-flex flex-column justify-content-center align-items-start">
+                                    <h3>Training</h3>
+                                    <p>MGALabs punta ad un'offerta formativa 
+                                        incentrata sulla Cyber Security e sulla 
+                                        necessità delle aziende di creare 
+                                        una maggiore consapevolezza sul mondo 
+                                        digitale, sulle tecnologie informatiche e sulle 
+                                        interazioni col web anche tra il personale 
+                                        non specializzato.</p>
+                                    <a class="btn btn-outline" href="/training.html">Scopri</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="soc-home" class="bg-black animate__fadeInDown">
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center">
+                    <!-- <img class="img-fluid mb-5" src="{static}/images/SOC.png" alt="Security Operation Center"> -->
+                    {{ svg("/images/soc.svg") }}
+                    <h2 class="mb-3">Scegli la nostra soluzione di controllo completo Security Operation Center</h2>
+                    <p>MGALabs, grazie alla conoscenza e alla specializzazione sulle tecnologie più avanzate 
+                        in materia di Cyber Security, offre assistenza tecnica e supporto logistico ai propri Clienti 
+                        per controllare e proteggere da rischi e problemi derivanti da attacchi e minacce informatiche. 
+                    </p>
+                    <a class="btn btn-outline btn-lg btn-orange my-5" href="/security-operation-center.html">Scopri</a>
+                </div>
+            </div>
+        </section>
+
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/retina.min.js"></script> 
+    </body>
+</html>
